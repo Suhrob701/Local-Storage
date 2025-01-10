@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: #f4f4f4;
+}
+
+.main {
+    width: 600px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: -50px;
+}
+
+body.dark-mode .main {
+    background-color: black;
+    color: #f4f4f4;
+}
+
+.h1 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.objects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.objects input {
+    flex: 1; 
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #6c63ff;
+    padding-left: 15px;
+    font-size: 16px;
+    background-color: #fafafa;
+    color: #333;
+}
+
+body.dark-mode .objects input {
+    background-color: #555;
+    color: #f4f4f4;
+    border: 1px solid #4a47ff;
+}
+
+.objects input:focus {
+    outline: none;
+    border-color: #4a47ff;
+    box-shadow: 0 0 5px #4a47ff;
+}
+
+.objects input::placeholder {
+    color: #b0b0b0;
+    font-weight: 400;
+}
+
+body.dark-mode .objects input::placeholder {
+    color: #ccc;
+}
+
+.icon-btn {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #6c63ff;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.icon-btn:hover {
+    background-color: #4a47ff;
+}
+
+.task-list {
+    margin-top: 25px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ececec;
+}
+
+body.dark-mode .task-item {
+    border-bottom: 1px solid #555;
+}
+
+.task-item:hover {
+    background-color: #f9f9f9;
+}
+
+body.dark-mode .task-item:hover {
+    background-color: #666;
+}
+
+.task-item span {
+    flex: 1;
+    font-size: 18px;
+    color: #333;
+}
+
+body.dark-mode .task-item span {
+    color: #f4f4f4;
+}
+
+.task-item.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+body.dark-mode .task-item.completed span {
+    color: #bbb;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+
